@@ -1,0 +1,8 @@
+<div class="task-wrapper">
+  <p [ngStyle]="{'text-decoration': task.isDone ? 'line-through' : 'none'}">{{ task.title }}</p>
+  <div class="actions">
+    <button (click)="edited.emit(task.id)" type="submit" class="btn btn-primary">Edit</button>
+    <button (click)="deleted.emit(task.id)" type="submit" class="btn btn-danger">Delete</button>
+    <button (click)="done.emit(task.id)" type="submit" class="btn btn-success" [disabled]="task.isDone">Done</button>
+  </div>
+</div>

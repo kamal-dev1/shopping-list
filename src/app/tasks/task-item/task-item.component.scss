@@ -1,0 +1,14 @@
+.task-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+
+  .actions {
+    display: flex;
+    column-gap: 4px;
+  }
+}
